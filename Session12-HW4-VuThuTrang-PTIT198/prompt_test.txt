@@ -1,0 +1,10 @@
+Đóng vai một QA/QC Engineer và Senior Backend Developer. Dựa vào tài liệu SRS và mã nguồn Service/Controller của chức năng "Đăng ký mở tài khoản cơ bản", hãy thực hiện các yêu cầu sau:
+
+1. Sinh danh sách Test Case dạng bảng phân tích các trường fullName, email, phone, citizenId. Bao gồm:
+   - Positive Test Case: Các trường hợp hợp lệ.
+   - Negative Test Case: Các trường hợp lỗi (để trống, sai định dạng, trùng lặp...).
+   - Boundary Test Case: Các trường hợp biên (chuỗi quá dài/quá ngắn).
+
+2. Sinh 50 dòng dữ liệu giả lập (Mockup data) dưới định dạng CSV chứa thông tin khách hàng ngẫu nhiên. Yêu cầu dữ liệu phải khớp với định dạng Việt Nam (tên người Việt, đầu số điện thoại Việt Nam hợp lệ như 03, 09, CCCD đúng 12 số, email).
+
+3. Viết các class Unit Test (sử dụng JUnit 5 và Mockito) để test luồng Đăng ký tài khoản trong `AccountController` và `AccountServiceImpl`. Code cần cover các trường hợp thành công và thất bại (ví dụ: trùng CCCD, sai validation).
